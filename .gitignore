@@ -1,0 +1,18 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+
+# Secrets / local config
+.env
+.env.local
+.env*.local
+
+# Personal data - never commit
+data/*.json
+uploads/**
+!uploads/master-resumes/
+!uploads/master-resumes/.gitkeep
+output/**
+!output/tailored-resumes/
+!output/tailored-resumes/.gitkeep

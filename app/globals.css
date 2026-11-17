@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg border border-slate-200 bg-white p-5 shadow-sm;
+  }
+  .card-title {
+    @apply mb-3 text-base font-semibold text-slate-900;
+  }
+  .label {
+    @apply mb-1 block text-xs font-medium uppercase tracking-wide text-slate-500;
+  }
+  .input {
+    @apply w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-slate-500 focus:ring-2 focus:ring-slate-200 disabled:bg-slate-100;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-700 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-danger {
+    @apply inline-flex items-center justify-center rounded-md border border-red-200 bg-white px-3 py-1.5 text-sm font-medium text-red-600 hover:bg-red-50 disabled:opacity-50;
+  }
+  .tab {
+    @apply rounded-md px-3 py-1.5 text-sm font-medium text-slate-600 hover:bg-slate-100;
+  }
+  /* Rendered Markdown for AI step output */
+  .md {
+    @apply max-w-none text-[15px] leading-7 text-slate-700;
+  }
+  .md > :first-child {
+    @apply mt-0;
+  }
+  .md h1 {
+    @apply mt-6 mb-3 text-xl font-semibold text-slate-900;
+  }
+  .md h2 {
+    @apply mt-7 mb-3 border-b border-slate-200 pb-1.5 text-lg font-semibold text-slate-900;
+  }
+  .md h3 {
+    @apply mt-5 mb-2 text-base font-semibold text-slate-900;
+  }
+  .md h4 {
+    @apply mt-4 mb-1.5 text-sm font-semibold uppercase tracking-wide text-slate-600;
+  }
+  .md p {
+    @apply my-3;
+  }
+  .md ul {
+    @apply my-3 list-disc space-y-1.5 pl-6 marker:text-slate-400;
+  }
+  .md ol {
+    @apply my-3 list-decimal space-y-1.5 pl-6 marker:font-medium marker:text-slate-500;
+  }
+  .md li > ul,
+  .md li > ol {
+    @apply my-1.5;
+  }
+  .md strong {
+    @apply font-semibold text-slate-900;
+  }
+  .md a {
+    @apply text-blue-700 underline underline-offset-2;
+  }
+  .md code {
+    @apply rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[13px] text-slate-800;
+  }
+  .md pre {
+    @apply my-3 overflow-x-auto rounded-md bg-slate-900 p-3 text-[13px] leading-6 text-slate-100;
+  }
+  .md pre code {
+    @apply bg-transparent p-0 text-inherit;
+  }
+  .md blockquote {
+    @apply my-3 border-l-4 border-slate-300 bg-slate-50 py-1 pl-4 text-slate-600;
+  }
+  .md hr {
+    @apply my-6 border-slate-200;
+  }
+  .md-table-wrap {
+    @apply my-4 overflow-x-auto rounded-md border border-slate-200;
+  }
+  .md table {
+    @apply w-full border-collapse text-sm;
+  }
+  .md thead {
+    @apply bg-slate-50;
+  }
+  .md th {
+    @apply border-b border-slate-200 px-3 py-2 text-left font-semibold text-slate-900;
+  }
+  .md td {
+    @apply border-b border-slate-100 px-3 py-2 align-top;
+  }
+  .md tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .tab-active {
+    @apply rounded-md bg-slate-900 px-3 py-1.5 text-sm font-medium text-white;
+  }
+}
